@@ -50,39 +50,20 @@
         </nav>
     </header>
     <main>
+        <section class="sitename-section">
+            <h1> SKULPTURER </h1>
+        </section>
+        <section >
+            <ul id="gallery" class="image-container">
 
+            </ul>
+        </section>
     </main>
     <!-- <footer>
         <p>© 2024 Copyright</p>
     </footer> -->
     <script type="module" src="/node_modules/viewerjs/dist/viewer.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', function () {
-          var gallery = document.getElementById('gallery');
-          var viewer = new Viewer(gallery, {
-            url: 'data-original',
-            title: function (image) {
-              return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
-            },
-            toolbar: {
-                zoomIn: 1,
-                zoomOut: 1,
-                oneToOne: 1,
-                reset: 1,
-                prev: 1,
-                play: {
-                show: 1,
-                size: 'large',
-                },
-                next: 1,
-                rotateLeft: 0,
-                rotateRight: 0,
-                flipHorizontal: 0,
-                flipVertical: 0
-            }
-          });
-        });
-      </script>
+    <script src="js/scripts.js"></script>
+    <script src="js/gallaryscript.js"></script>
 </body>
 </html>
