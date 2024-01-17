@@ -211,7 +211,7 @@ li.dropdown {
 
 .background-image {
   height: 100vh;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 .mob-hide {
@@ -302,6 +302,23 @@ main {
   opacity: 0;
 }
 
+/* viewerjs override*/
+.viewer-title {
+  font-size: 14px;
+}
+
+.viewer-navbar .viewer-list {
+  min-height: 120px;
+}
+
+.viewer-list li {
+  height: 120px;
+  width: 120px;
+}
+
+.viewer-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 @media screen and (min-width: 576px) {
   .sitename-section {
