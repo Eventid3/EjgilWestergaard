@@ -305,6 +305,7 @@ main {
 /* viewerjs override*/
 .viewer-title {
   font-size: 14px;
+  text-wrap:wrap;
 }
 
 .viewer-navbar .viewer-list {
