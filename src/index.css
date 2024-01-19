@@ -302,10 +302,19 @@ main {
   opacity: 0;
 }
 
-/* viewerjs override*/
+/* viewerjs override */
+.viewer-footer {
+  background-color: rgba(87, 87, 87, 1);
+}
+
 .viewer-title {
   font-size: 14px;
   text-wrap:wrap;
+  z-index: -1;
+}
+
+.viewer-navbar {
+  background-color: rgba(87, 87, 87, 1);
 }
 
 .viewer-navbar .viewer-list {
@@ -318,7 +327,7 @@ main {
 }
 
 .viewer-backdrop {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(161, 161, 155,1);
 }
 
 @media screen and (min-width: 576px) {
