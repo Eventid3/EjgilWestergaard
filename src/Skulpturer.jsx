@@ -4,7 +4,7 @@ import Sitename from "./components/Sitename"
 function Skulpturer(){
     return <main>
         <Sitename title={"SKULPTURER"}/>
-        <section>
+        <section className="image-section">
             <ImageGallery/>
         </section>
     </main>

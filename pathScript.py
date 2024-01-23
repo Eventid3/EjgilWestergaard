@@ -17,7 +17,7 @@ for t in thumbnails:
 #         file.write(f'"img/Skulpturer/thumbnails/{img}",\n')
 currentImg = ""
 
-with open("info.txt", encoding="utf-8") as file:
+with open("textinfo/info.txt", encoding="utf-8") as file:
     for line in file:
         if line.startswith("Navn: "):
             imageDict[currentImg]["name"] = line[6:-1]
