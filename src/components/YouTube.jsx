@@ -32,9 +32,14 @@
 // }
 
 function YouTubePlayer({href, src}) {
-  return <a href={href}>
-    <img className="video-link" src={src} />
-    </a>
+  return <div className="video-link">
+    <a href={href} target="_blank">
+      <img className="video-image" src={src} />
+      <div className="video-overlay">
+        <img src="img/play-button.png" />
+      </div>
+      </a>
+    </div>
 }
 
   export default YouTubePlayer

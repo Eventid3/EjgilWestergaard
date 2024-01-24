@@ -1,7 +1,7 @@
 import ImageGallery from "./components/ImageGallery"
 import Sitename from "./components/Sitename"
 
-function Skulpturer(){
+function Skulpturer() {
     return <main>
         <Sitename title={"SKULPTURER"}/>
         <section className="image-section">
