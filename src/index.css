@@ -218,6 +218,28 @@ li.dropdown {
   display: none;
 }
 
+/* SubNav til Skulpturer */
+
+div.scrollmenu {
+  display: flex;
+  background-color: #322f2bef;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  backdrop-filter: brightness(120%);
+  cursor: pointer;
+}
+
 main {
   display: block;
   height: 100%;
@@ -248,23 +270,52 @@ main {
   max-width: 1200px;
 }
 
+.image-sub-container {
+  position: relative;
+  margin:10px;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .3s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  
+}
+
 .thumbnail {
+  display: block;
+  width: 100%;
+  /* height:auto; */
   max-width: 200px;
   min-width: 200px;
   filter:grayscale(90%);
   transition: 0.2s;
-  margin:10px;
+  /* margin:10px; */
   min-height: 200px;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 1px;
+  border-radius: 3px;
   z-index: 1;
 }
 
-.thumbnail:hover{
+.image-sub-container:hover .thumbnail{
   cursor: zoom-in;
   filter:grayscale(0%);
   transform: scale(105%);
+}
+
+.image-sub-container:hover .image-overlay{
+  opacity: 1;
 }
 
 .video-section {
@@ -296,8 +347,8 @@ main {
   max-width: 340px;
 }
 
-.video-image {
-}
+/* .video-image {
+} */
 
 .video-overlay {
   position:absolute;
@@ -374,6 +425,11 @@ main {
 }
 
 @media screen and (min-width: 576px) {
+
+  div.scrollmenu {
+    justify-content: center;
+  }
+
   .sitename-section {
     height:196px;
   }
@@ -391,6 +447,8 @@ main {
   .mob-hide {
     display: block;
   }
+
+
 
   .background-image {
     width: 100%;

@@ -15,8 +15,8 @@ function Nav() {
             <li className="mob-hide right"><Link to="skulpturer">Skulpturer</Link></li>
 
             {/* mobile nav */}
-            <li class="mob-dropdown right">
-                <Link to="javascript:void(0)" className="mob-dropbtn"><img src={dropbtn} width="30px" className="dropdownlogo"></img></Link>
+            <li className="mob-dropdown right">
+                <Link className="mob-dropbtn"><img src={dropbtn} width="30px" className="dropdownlogo"></img></Link>
                 <div className="mob-dropdown-content">
                     <Link to="skulpturer">Skulpturer</Link>
                     <Link to="video">Video</Link>
