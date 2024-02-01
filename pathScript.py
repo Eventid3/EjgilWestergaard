@@ -29,13 +29,15 @@ def createThumbnailList(prePath, thumbPath, imgPath, infoPath, outputfile):
                 imageDict[currentImg]["info"] = line[6:-1]
                 # print(currentImg, line[6:-1])
             else: 
-                currentImg = str(line[:-1])
+                currentImg = str(line[:-1].strip())
 
 
     with open(outputfile,mode='w',encoding="utf-8") as file:
         for k,v in imageDict.items():
             file.write(f"'{k}' : {v},\n")
             
-createThumbnailList("public/", "img/Skulpturer/thumbnails", "img/Skulpturer", "textinfo/info.txt", "lemvigthumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer i kommunen/thumbnails", "img/Skulpturer i kommunen", "public/img/Skulpturer i kommunen/Info/info.txt", "lemvigthumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer i haven/thumbnails", "img/Skulpturer i haven", "public/img/Skulpturer i haven/Info/info.txt", "haventhumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer uden for kommunen/thumbnails", "img/Skulpturer uden for kommunen", "public/img/Skulpturer uden for kommunen/Info/info.txt", "ulemvigthumbnaillist.txt")
 createThumbnailList("public/", "img/Foto i værksted/thumbnails", "img/Foto i værksted", "public/img/Foto i værksted/Info/info.txt", "vaerkstedthumbnaillist.txt")
 createThumbnailList("public/", "img/Skulpturer på Grunden/thumbnails", "img/Skulpturer på Grunden", "public/img/Skulpturer på Grunden/Info/info.txt", "grundenthumbnaillist.txt")
