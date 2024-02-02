@@ -36,8 +36,8 @@ def createThumbnailList(prePath, thumbPath, imgPath, infoPath, outputfile):
         for k,v in imageDict.items():
             file.write(f"'{k}' : {v},\n")
             
-createThumbnailList("public/", "img/Skulpturer i kommunen/thumbnails", "img/Skulpturer i kommunen", "public/img/Skulpturer i kommunen/Info/info.txt", "lemvigthumbnaillist.txt")
-createThumbnailList("public/", "img/Skulpturer i haven/thumbnails", "img/Skulpturer i haven", "public/img/Skulpturer i haven/Info/info.txt", "haventhumbnaillist.txt")
-createThumbnailList("public/", "img/Skulpturer uden for kommunen/thumbnails", "img/Skulpturer uden for kommunen", "public/img/Skulpturer uden for kommunen/Info/info.txt", "ulemvigthumbnaillist.txt")
-createThumbnailList("public/", "img/Foto i værksted/thumbnails", "img/Foto i værksted", "public/img/Foto i værksted/Info/info.txt", "vaerkstedthumbnaillist.txt")
-createThumbnailList("public/", "img/Skulpturer på Grunden/thumbnails", "img/Skulpturer på Grunden", "public/img/Skulpturer på Grunden/Info/info.txt", "grundenthumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer i kommunen/thumbnails", "img/Skulpturer i kommunen", "textinfo/infoLemvig.txt", "lemvigthumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer i haven/thumbnails", "img/Skulpturer i haven", "textinfo/infoHaven.txt", "haventhumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer uden for kommunen/thumbnails", "img/Skulpturer uden for kommunen", "textinfo/infoULemvig.txt", "ulemvigthumbnaillist.txt")
+createThumbnailList("public/", "img/Foto i værksted/thumbnails", "img/Foto i værksted", "textinfo/infoVaerkstedet.txt", "vaerkstedthumbnaillist.txt")
+createThumbnailList("public/", "img/Skulpturer på Grunden/thumbnails", "img/Skulpturer på Grunden", "textinfo/infoGrunden.txt", "grundenthumbnaillist.txt")
