@@ -387,9 +387,13 @@ main {
 .viewer-title {
   font-size: 14px;
   max-width: 100%;
+  white-space: normal;
   text-wrap:wrap;
+  text-overflow: clip;
   word-wrap: break-word; 
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
+  overflow:visible;
+
   z-index: -1;
 }
 
