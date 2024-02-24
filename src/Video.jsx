@@ -15,7 +15,7 @@ function Video(){
 <p>Efter forretningens ophør arbejdede Bente i 21 år som frivillig i Røde Kors. Her tog hun del i ansvaret for de ansatte og var med til at bygge Røde Kors’ genbrugsbutik op til den høje standard, den er kendt for i dag.</p>
 <p>Bente og Ejgil er forældre til Elof og Laila Westergaard.</p>            
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src=""/>
+            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Bente Westergaard.jpg"/>
         </div>
 
         <div className="video-container">
@@ -74,7 +74,7 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
 <p>Sammen med sine fire andre søskende voksede hun op på stenhuggeriet i Weibelsgade, stiftet af Torvald Westergaard i 1923. Hendes mor og far, Agnethe og Torvald, underviste deres børn hjemme. Ragna blev uddannet pædagog i Holstebro og bor nu i Ålborg. </p>
 <p>Hun er enke efter Aken Thorndahl med hvem hun fik to børn, Arvid og Bjarke. </p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src=""/>
+            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Ragna Thorndahl.jpg"/>
         </div>
 
         <div className="video-container">
