@@ -4,20 +4,48 @@ import 'viewerjs/dist/viewer.css';
 
 const basePath = import.meta.env.MODE === 'production' ? '/EjgilWestergaard/' : '/';
 
-const FotoGallery = () => {
-    const images = [
-        "img/Foto af Ejgil/01FotoEjgil Westergaard.jpg",
-        "img/Foto af Ejgil/02FotoEjgil Westergaard.jpg",
-        "img/Foto af Ejgil/03FotoEjgil Westergaard.jpg",
-        "img/Foto af Ejgil/04FotoEjgil Westergaard.jpg",
-        "img/Foto af Ejgil/05FotoEjgil Westergaard.jpg",
-        "img/Foto af Ejgil/06FotoEjgil Westergaard.jpg",
-    ]
+const FotoGallery = ({ selectedCategory }) => {
+  const avisImages = {
+    '001' : {'thumb': 'img/Foto/thumbnails/001Bonden fra VejrupThumbnail.jpg', 'images': ['img/Foto/001ABonden fra Vejrup.jpg', 'img/Foto/001BBonden fra Vejrup.jpg'], 'name': 'Bonden fra Vejrup', 'info': 'Gips. Skulpturen i granit står ved VIA University Collage Nørre Nissum'},
+    '002' : {'thumb': 'img/Foto/thumbnails/002StenhavenThumbnail.jpg', 'images': ['img/Foto/002Stenhaven.jpg'], 'name': '"Stenhaven"', 'info': 'Ejgil tegner og illustrerer kundens ønske til en gravsten.'},
+    '003' : {'thumb': 'img/Foto/thumbnails/003Beboboelse ved værkstedThumbnail.jpg', 'images': ['img/Foto/003Beboboelse ved værksted.jpg'], 'name': 'Beboelse ved værksted', 'info': 'Udstillede gravsten ved værkstedet i Weibelsgade'},
+    '004' : {'thumb': 'img/Foto/thumbnails/004WeibelsgadeThumbnail.jpg', 'images': ['img/Foto/004Weibelsgade.jpg'], 'name': 'Weibelsgade', 'info': 'To fugle - privat eje'},
+    '005' : {'thumb': 'img/Foto/thumbnails/005Ejgil på kontoretThumbnail.jpg', 'images': ['img/Foto/005Ejgil på kontoret.jpg'], 'name': 'Ejgil på kontoret', 'info': 'Ejgil Westergaard var ofte ude i huggeværkstedet, medens Bente Westergaard passede kontoret'},
+    '006' : {'thumb': 'img/Foto/thumbnails/006AVærkstedetThumbnail.jpg', 'images': ['img/Foto/006AVærkstedet.jpg', 'img/Foto/006BVærkstedet.jpg', 'img/Foto/006CVærkstedet.jpg'], 'name': 'Værkstedet', 'info': 'Værkstedet - forretningen i Weibelsgade i Lemvig'},
+    '007' : {'thumb': 'img/Foto/thumbnails/007ASkrubtudsen OdenseThumbnail.jpg', 'images': ['img/Foto/007ASkrubtudsen Odense .jpg', 'img/Foto/007BSkrubtudsen Odense.jpg', 'img/Foto/007CSkrubtudsen Odense.jpg'], 'name': 'Skrubtudse Odense', 'info': 'Springvandet "Skrubtudsen" opstillet i Vintappestræde i Odense, 1990'},
+    '008' : {'thumb': 'img/Foto/thumbnails/008Bente på kontoretThumbnail.jpg', 'images': ['img/Foto/008Bente på kontoret.jpg'], 'name': 'Bente på kontoret', 'info': 'Bente Westergaard, Ejgils hustru, passede forretningens mange kontoropgaver.'},
+    '009' : {'thumb': 'img/Foto/thumbnails/009AEjgil i værkstedetThumbnail.jpg', 'images': ['img/Foto/009AEjgil i værkstedet.jpg', 'img/Foto/009BEjgil i værkstedet.jpg'], 'name': 'Ejgil i værkstedet', 'info': 'Er det granitbogstaver - der bliver til guldbogstaver?'},
+    '010' : {'thumb': 'img/Foto/thumbnails/010APå vej til FjaltringThumbnail.jpg', 'images': ['img/Foto/010APå vej til Fjaltring.jpg', 'img/Foto/010BPå vej til Fjaltring.jpg', 'img/Foto/010CPå vej til Fjaltring.jpg'], 'name': 'På vej til Fjaltring', 'info': 'Ejgil kører i sin lille lastbil med kran ud til Fjaltring Kirke med Laila Westergaards skulptur Den Døde  og Den Sørgende'},
+    '011' : {'thumb': 'img/Foto/thumbnails/011ASvend Moding - NybroThumbnail.jpg', 'images': ['img/Foto/011ASvend Moding - Nybro.jpg', 'img/Foto/011BSvend Moding - Nybro.jpg'], 'name': 'Svens Moding - Nybro', 'info': 'Svend Moding fra Nybro i Sverige inspicerer skulpturen Stenens Bevægelse. Svend Moding var også medlem af Nybro Amatørorkester, her i samtale med Ejgil'},
+    '012' : {'thumb': 'img/Foto/thumbnails/012Lemvig AmatørorkesterThumbnail.jpg', 'images': ['img/Foto/012Lemvig Amatørorkester.jpg'], 'name': 'Lemvig Amatørorkester', 'info': 'Ejgil spillede bl. a. trompet. Var i flere år leder af Lemvig Amatørorkester'},
+    '013' : {'thumb': 'img/Foto/thumbnails/013Opus 83Thumbnail.jpg', 'images': ['img/Foto/013Opus 83.jpg'], 'name': 'Opus 83', 'info': 'Skulpturen er placeret i Skjern'},
+    '014' : {'thumb': 'img/Foto/thumbnails/014Musikstenen under udarbejdelseThumbnail.jpg', 'images': ['img/Foto/014Musikstenen under udarbejdelse.jpg'], 'name': 'Musikstenen under udarbejdelse', 'info': 'Musikstenen står i dag på Kirketorvet i Hobro. Stenen viser lidt hvordan Ejgil arbejdede, Alle fidurer er på plads hele stenen rundt. Figurerne hugges derefter "dybere" i relief.'},
+    '015' : {'thumb': 'img/Foto/thumbnails/015AKirketorvet, HobroThumbnail.jpg', 'images': ['img/Foto/015AKirketorvet, Hobro.jpg', 'img/Foto/015BKirketorvet, Hobro.jpg', 'img/Foto/015CKirketorvet, Hobro.jpg', 'img/Foto/015Kirketorvet, Hobro.jpg'], 'name': 'Kirketorvet, Hobro', 'info': 'Ejgil Westergaard, Kasper Heiberg og Erik Heide udsmykkeke i fællesskab Kirketorvet i 1982. Ejgils bidrag er den store Musiksten'},
+    '016' : {'thumb': 'img/Foto/thumbnails/016Søhest i WeibelsgadeThumbnail.jpg', 'images': ['img/Foto/016ASøhest i Weibelsgade.jpg', 'img/Foto/016BSøhest i Weibelsgade.jpg'], 'name': 'Søhest i Weibelsgade', 'info': 'Søhesten (vandhane) i granit er i privat eje. Søhest (vandhane) støbt i bronze er placeret ved Lemvig Kirke'},
+    '017' : {'thumb': 'img/Foto/thumbnails/017Sejl og KonebådThumbnail.jpg', 'images': ['img/Foto/017Sejl og Konebåd.jpg'], 'name': 'Sejl og konebåd', 'info': 'privat eje'},
+    '018' : {'thumb': 'img/Foto/thumbnails/018Tre skulpturer hos Svend NielsenThumbnail.jpg', 'images': ['img/Foto/018Tre skulpturer hos Svend Nielsen.jpg'], 'name': 'Tre skulpturer hos Svend Nielsen', 'info': 'Læge Svend Nielsen - stor kunstkender og kunstsamler, mere end 40 år som ankermand for kunstlivet i Hobro, bl.a. Kunstetagerne'},
+    '019' : {'thumb': 'img/Foto/thumbnails/019I værkstedet - atelieretThumbnail.jpg', 'images': ['img/Foto/019I værkstedet - atelieret.jpg'], 'name': 'I værkstedet - etalieret', 'info': 'Der er mange fine små skulpturer og modeller til større værker i Ejgils værksted - atelie.'},
+    '020' : {'thumb': 'img/Foto/thumbnails/020AForan værkstedetThumbnail.jpg', 'images': ['img/Foto/020AForan værkstedet.jpg', 'img/Foto/020BForan værkstedet.jpg', 'img/Foto/020CForan værkstedet.jpg'], 'name': 'Foran værkstedet', 'info': 'Her arbejder Ejgil på en stor fugl, relief på værkstedets mur i baggrunden'},
+    '021' : {'thumb': 'img/Foto/thumbnails/021Winston ChurchillThumbnail.jpg', 'images': ['img/Foto/021Winston Churchill.jpg'], 'name': 'Winston Churchill', 'info': 'Privat eje'},
+    '022' : {'thumb': 'img/Foto/thumbnails/022APå grundenThumbnail.jpg', 'images': ['img/Foto/022APå grunden.jpg', 'img/Foto/022BPå grunden.jpg', 'img/Foto/022CPå grunden.jpg', 'img/Foto/022DPå grunden.jpg'], 'name': 'På grunden', 'info': 'Ejgil Westergaard går rundt mellem skulpturerne på grunden. Skulpturerne på grunden er privat eje'},
+    '023' : {'thumb': 'img/Foto/thumbnails/023Skal - del af skulptur gruppeThumbnail.jpg', 'images': ['img/Foto/023Skal - del af skulptur gruppe.jpg'], 'name': 'Skal - del af skulpgruppe', 'info': 'Skulpturen/skulpturerne er placeret ved hospice i Esbjerg'},
+    '024' : {'thumb': 'img/Foto/thumbnails/024Besøg på BornholmThumbnail.jpg', 'images': ['img/Foto/024Besøg på Bornholm.jpg'], 'name': 'Besøg på Bornholm', 'info': 'Ejgil Westergaards sidste udstilling med Koloristerne i Bornholms Kunstmuseum'},
+    '025' : {'thumb': 'img/Foto/thumbnails/025ASildehagen, HobroThumbnail.jpg', 'images': ['img/Foto/025ASildehagen, Hobro.jpg', 'img/Foto/025BSildehagen, Hobro.jpg', 'img/Foto/025CSildehagen, Hobro.jpg', 'img/Foto/025DSildehagen, Hobro.jpg', 'img/Foto/025ESildehagen, Hobro.jpg', 'img/Foto/025FSildehagen, Hobro.jpg'], 'name': 'Sildehagen, Hobro', 'info': 'Skulpturen Horn - Bue - Fugl blev placeret på Sildehagen. Blev senere flyttet ind til lystbådhavnen. I 2024 arbejdes på at få skulpturen tilbage til Sildehagen. Ejgils barnebarn er kravlet "til tops".'},
+    };
+
+  const rawImages = avisImages;
+
+  const images = Object.entries(rawImages).reduce((acc, [imgnum, data]) => {
+    acc[imgnum] = data;
+    acc[imgnum]['thumb'] = basePath + acc[imgnum]['thumb'];
+    acc[imgnum]['images'] = data['images'].map(img => basePath + img);
+    return acc;
+  }, {});
 
   const handleClick = (imageSet) => {
     const viewerImages = document.createElement('div');
 
-    imageSet.forEach((url) => {
+    imageSet["images"].forEach((url) => {
       const img = document.createElement('img');
       img.src = url;
       viewerImages.appendChild(img);
@@ -27,6 +55,7 @@ const FotoGallery = () => {
       hidden: () => {
         viewer.destroy();
       },
+      title: () => imageSet["name"] + " - " + imageSet["info"],
       toolbar: {
         zoomIn: { show: 1,size: 'large', },
         zoomOut: { show: 1,size: 'large', },
@@ -47,10 +76,10 @@ const FotoGallery = () => {
 
   return (
     <div className="image-container">
-      {Object.entries(images).map(([imgnum,url]) => (
+      {Object.entries(images).map(([imgnum, imgdata]) => (
         <div className='image-sub-container'>
-        <img src={url} className="thumbnail" onClick={() => handleClick(images)} key={imgnum}/>
-        {/* <div className='image-overlay'>{imgdata["name"]}</div> */}
+        <img src={imgdata["thumb"]} className="thumbnail" onClick={() => handleClick(imgdata)} alt={`Thumbnail ${imgnum}`} key={imgnum}/>
+        <div className='image-overlay'>{imgdata["name"]}</div>
         </div>
       ))}
     </div>
