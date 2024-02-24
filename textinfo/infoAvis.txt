@@ -1,0 +1,167 @@
+001
+Navn: Avisudklip 01
+Info: 01
+002
+Navn: Avisudklip 02
+Info: 02
+003
+Navn: Avisudklip 03
+Info: 03
+004
+Navn: Avisudklip 04
+Info: 04
+005
+Navn: Avisudklip 05
+Info: 05
+006
+Navn: Avisudklip 06
+Info: 06
+007
+Navn: Avisudklip 07
+Info: 07
+008
+Navn: Avisudklip 08
+Info: 08
+009
+Navn: Avisudklip 09
+Info: 09
+010
+Navn: Avisudklip 10
+Info: 10
+011
+Navn: Avisudklip 11
+Info: 11
+012
+Navn: Avisudklip 12
+Info: 12
+013
+Navn: Avisudklip 13
+Info: 13
+014
+Navn: Avisudklip 14
+Info: 14
+015
+Navn: Avisudklip 15
+Info: 15
+016
+Navn: Avisudklip 16
+Info: 16
+017
+Navn: Avisudklip 17
+Info: 17
+018
+Navn: Avisudklip 18
+Info: 18
+019
+Navn: Avisudklip 19
+Info: 19
+020
+Navn: Avisudklip 20
+Info: 20
+021
+Navn: Avisudklip 21
+Info: 21
+022
+Navn: Avisudklip 22
+Info: 22
+023
+Navn: Avisudklip 22
+Info: 22
+023
+Navn: Avisudklip 23
+Info: 23
+024
+Navn: Avisudklip 24
+Info: 24
+025
+Navn: Avisudklip 25
+Info: 25
+026
+Navn: Avisudklip 26
+Info: 26
+027
+Navn: Avisudklip 27
+Info: 27
+028
+Navn: Avisudklip 28
+Info: 28
+029
+Navn: Avisudklip 29
+Info: 29
+030
+Navn: Avisudklip 30
+Info: 30
+031
+Navn: Avisudklip 31
+Info: 31
+032
+Navn: Avisudklip 32
+Info: 33
+033
+Navn: Avisudklip 33
+Info: 33
+034
+Navn: Avisudklip 34
+Info: 34
+035
+Navn: Avisudklip 35
+Info: 35
+036
+Navn: Avisudklip 36
+Info: 36
+037
+Navn: Avisudklip 37
+Info: 37
+038
+Navn: Avisudklip 38
+Info: 38
+039
+Navn: Avisudklip 39
+Info: 39
+040
+Navn: Avisudklip 40
+Info: 40 - Holstebro Kunstmuseum
+041
+Navn: Avisudklip 41
+Info: 41 - "Sildehagen"
+042
+Navn: Avisudklip 42
+Info: 42 - "Sildehagen"
+043
+Navn: Avisudklip 43
+Info: 43 - "Sildehagen"
+044
+Navn: Avisudklip 44
+Info 44 - "Sildehagen"
+045
+Navn: Avisudklip 45
+Info: 45
+046
+Navn: Avisudklip 46
+Info: 46
+047
+Navn: Avisudklip 47
+Info: 47
+048
+Navn: Avisudklip 48
+Info: 48
+049
+Navn: Avisudklip 49
+Info: 49
+050
+Navn: Avisudklip 50
+Info: 50
+051
+Navn: Avisudklip 51
+Info: 51
+052
+Navn: Avisudklip 52
+Info: 52
+053
+Navn: Avisudklip 53
+Info: 53
+054
+Navn: Skriblerier
+Info: 54 - Ejgils opstilling
+
+

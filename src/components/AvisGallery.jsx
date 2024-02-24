@@ -1,0 +1,118 @@
+import React, { useEffect, useRef } from 'react';
+import Viewer from 'viewerjs';
+import 'viewerjs/dist/viewer.css';
+
+const basePath = import.meta.env.MODE === 'production' ? '/EjgilWestergaard/' : '/';
+
+const ImageGallery = ({ selectedCategory }) => {
+  const avisImages = {
+    '039' : {'thumb': 'img/Avisudklip/thumbnails/039avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/039Aavisudklip.jpg'], 'name': 'Avisudklip 39', 'info': '39'},
+    '046' : {'thumb': 'img/Avisudklip/thumbnails/046avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/046Aavisudklip.jpg'], 'name': 'Avisudklip 46', 'info': '46'},
+    '033' : {'thumb': 'img/Avisudklip/thumbnails/033avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/033Aavisudklip.jpg'], 'name': 'Avisudklip 33', 'info': '33'},
+    '002' : {'thumb': 'img/Avisudklip/thumbnails/002avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/002Aavisudklip.jpg'], 'name': 'Avisudklip 02', 'info': '02'},
+    '008' : {'thumb': 'img/Avisudklip/thumbnails/008avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/008Aavisudklip.jpg'], 'name': 'Avisudklip 08', 'info': '08'},
+    '041' : {'thumb': 'img/Avisudklip/thumbnails/041avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/041Davisudklip.jpg', 'img/Avisudklip/041Cavisudklip.jpg', 'img/Avisudklip/041Bavisudklip.jpg', 'img/Avisudklip/041Aavisudklip.jpg'], 'name': 'Avisudklip 41', 'info': '41 - "Sildehagen"'},
+    '034' : {'thumb': 'img/Avisudklip/thumbnails/034avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/034Aavisudklip.jpg'], 'name': 'Avisudklip 34', 'info': '34'},
+    '005' : {'thumb': 'img/Avisudklip/thumbnails/005avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/005Aavisudklip.jpg'], 'name': 'Avisudklip 05', 'info': '05'},
+    '037' : {'thumb': 'img/Avisudklip/thumbnails/037avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/037Aavisudklip.jpg'], 'name': 'Avisudklip 37', 'info': '37'},
+    '042' : {'thumb': 'img/Avisudklip/thumbnails/042avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/042Bavisudklip.jpg', 'img/Avisudklip/042Aavisudklip.jpg'], 'name': 'Avisudklip 42', 'info': '42 - "Sildehagen"'},
+    '048' : {'thumb': 'img/Avisudklip/thumbnails/048avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/048Aavisudklip.jpg', 'img/Avisudklip/048Bavisudklip.jpg'], 'name': 'Avisudklip 48', 'info': '48'},
+    '006' : {'thumb': 'img/Avisudklip/thumbnails/006avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/006Aavisudklip.jpg'], 'name': 'Avisudklip 06', 'info': '06'},
+    '030' : {'thumb': 'img/Avisudklip/thumbnails/030avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/030Aavisudklip.jpg'], 'name': 'Avisudklip 30', 'info': '30'},
+    '045' : {'thumb': 'img/Avisudklip/thumbnails/045avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/045Aavisudklip.jpg'], 'name': 'Avisudklip 45', 'info': '45'},
+    '001' : {'thumb': 'img/Avisudklip/thumbnails/001avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/001Aavisudklip.jpg'], 'name': 'Avisudklip 01', 'info': '01'},
+    '031' : {'thumb': 'img/Avisudklip/thumbnails/031avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/031Aavisudklip.jpg'], 'name': 'Avisudklip 31', 'info': '31'},
+    '044' : {'thumb': 'img/Avisudklip/thumbnails/044avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/044Aavisudklip.jpg'], 'name': 'Avisudklip 44', 'info': ''},
+    '007' : {'thumb': 'img/Avisudklip/thumbnails/007avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/007Aavisudklip.jpg'], 'name': 'Avisudklip 07', 'info': '07'},
+    '049' : {'thumb': 'img/Avisudklip/thumbnails/049avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/049Aavisudklip.jpg'], 'name': 'Avisudklip 49', 'info': '49'},
+    '036' : {'thumb': 'img/Avisudklip/thumbnails/036avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/036Aavisudklip.jpg'], 'name': 'Avisudklip 36', 'info': '36'},
+    '043' : {'thumb': 'img/Avisudklip/thumbnails/043avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/043Aavisudklip.jpg'], 'name': 'Avisudklip 43', 'info': '43 - "Sildehagen"'},
+    '004' : {'thumb': 'img/Avisudklip/thumbnails/004avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/004Aavisudklip.jpg'], 'name': 'Avisudklip 04', 'info': '04'},
+    '040' : {'thumb': 'img/Avisudklip/thumbnails/040avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/040Aavisudklip.jpg', 'img/Avisudklip/040Bavisudklip.jpg'], 'name': 'Avisudklip 40', 'info': '40 - Holstebro Kunstmuseum'},
+    '035' : {'thumb': 'img/Avisudklip/thumbnails/035avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/035Aavisudklip.jpg'], 'name': 'Avisudklip 35', 'info': '35'},
+    '009' : {'thumb': 'img/Avisudklip/thumbnails/009avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/009Aavisudklip.jpg'], 'name': 'Avisudklip 09', 'info': '09'},
+    '047' : {'thumb': 'img/Avisudklip/thumbnails/047avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/047Aavisudklip.jpg'], 'name': 'Avisudklip 47', 'info': '47'},
+    '032' : {'thumb': 'img/Avisudklip/thumbnails/032avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/032Aavisudklip.jpg'], 'name': 'Avisudklip 32', 'info': '33'},
+    '011' : {'thumb': 'img/Avisudklip/thumbnails/011avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/011Aavisudklip.jpg', 'img/Avisudklip/011Bavisudklip.jpg', 'img/Avisudklip/011Cavisudklip.jpg'], 'name': 'Avisudklip 11', 'info': '11'},
+    '020' : {'thumb': 'img/Avisudklip/thumbnails/020avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/020Aavisudklip.jpg'], 'name': 'Avisudklip 20', 'info': '20'},
+    '016' : {'thumb': 'img/Avisudklip/thumbnails/016avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/016Aavisudklip.jpg'], 'name': 'Avisudklip 16', 'info': '16'},
+    '052' : {'thumb': 'img/Avisudklip/thumbnails/052avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/052Aavisudklip.jpg'], 'name': 'Avisudklip 52', 'info': '52'},
+    '027' : {'thumb': 'img/Avisudklip/thumbnails/027avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/027Aavisudklip.jpg'], 'name': 'Avisudklip 27', 'info': '27'},
+    '015' : {'thumb': 'img/Avisudklip/thumbnails/015avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/015Aavisudklip.jpg'], 'name': 'Avisudklip 15', 'info': '15'},
+    '024' : {'thumb': 'img/Avisudklip/thumbnails/024avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/024Aavisudklip.jpg'], 'name': 'Avisudklip 24', 'info': '24'},
+    '051' : {'thumb': 'img/Avisudklip/thumbnails/051avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/051Aavisudklip.jpg'], 'name': 'Avisudklip 51', 'info': '51'},
+    '018' : {'thumb': 'img/Avisudklip/thumbnails/018avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/018Aavisudklip.jpg'], 'name': 'Avisudklip 18', 'info': '18'},
+    '012' : {'thumb': 'img/Avisudklip/thumbnails/012avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/012Aavisudklip.jpg'], 'name': 'Avisudklip 12', 'info': '12'},
+    '023' : {'thumb': 'img/Avisudklip/thumbnails/023avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/023Aavisudklip.jpg'], 'name': 'Avisudklip 23', 'info': '23'},
+    '029' : {'thumb': 'img/Avisudklip/thumbnails/029avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/029Aavisudklip.jpg'], 'name': 'Avisudklip 29', 'info': '29'},
+    '038' : {'thumb': 'img/Avisudklip/thumbnails/038avisudklipThumbnaul.jpg', 'images': ['img/Avisudklip/038Aavisudklip.jpg'], 'name': 'Avisudklip 38', 'info': '38'},
+    '028' : {'thumb': 'img/Avisudklip/thumbnails/028avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/028Aavisudklip.jpg'], 'name': 'Avisudklip 28', 'info': '28'},
+    '022' : {'thumb': 'img/Avisudklip/thumbnails/022avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/022Aavisudklip.jpg'], 'name': 'Avisudklip 22', 'info': '22'},
+    '013' : {'thumb': 'img/Avisudklip/thumbnails/013avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/013Aavisudklip.jpg'], 'name': 'Avisudklip 13', 'info': '13'},
+    '019' : {'thumb': 'img/Avisudklip/thumbnails/019avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/019Aavisudklip.jpg'], 'name': 'Avisudklip 19', 'info': '19'},
+    '025' : {'thumb': 'img/Avisudklip/thumbnails/025avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/025Aavisudklip.jpg'], 'name': 'Avisudklip 25', 'info': '25'},
+    '050' : {'thumb': 'img/Avisudklip/thumbnails/050avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/050Aavisudklip.jpg'], 'name': 'Avisudklip 50', 'info': '50'},
+    '003' : {'thumb': 'img/Avisudklip/thumbnails/003avisudklipThumbmail.jpg', 'images': ['img/Avisudklip/003Aavisudklip.jpg'], 'name': 'Avisudklip 03', 'info': '03'},
+    '014' : {'thumb': 'img/Avisudklip/thumbnails/014avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/014Aavisudklip.jpg'], 'name': 'Avisudklip 14', 'info': '14'},
+    '053' : {'thumb': 'img/Avisudklip/thumbnails/053avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/053Aavisudklip.jpg'], 'name': 'Avisudklip 53', 'info': '53'},
+    '026' : {'thumb': 'img/Avisudklip/thumbnails/026avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/026Aavisudklip.jpg'], 'name': 'Avisudklip 26', 'info': '26'},
+    '017' : {'thumb': 'img/Avisudklip/thumbnails/017avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/017Aavisudklip.jpg'], 'name': 'Avisudklip 17', 'info': '17'},
+    '054' : {'thumb': 'img/Avisudklip/thumbnails/054avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/054Aavisudklip.jpg'], 'name': 'Skriblerier', 'info': '54 - Ejgils opstilling'},
+    '021' : {'thumb': 'img/Avisudklip/thumbnails/021avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/021Aavisudklip.jpg'], 'name': 'Avisudklip 21', 'info': '21'},
+    '010' : {'thumb': 'img/Avisudklip/thumbnails/010avisudklipThumbnail.jpg', 'images': ['img/Avisudklip/010Aavisudklip.jpg'], 'name': 'Avisudklip 10', 'info': '10'},
+    };
+
+  const rawImages = avisImages;
+
+  const images = Object.entries(rawImages).reduce((acc, [imgnum, data]) => {
+    acc[imgnum] = data;
+    acc[imgnum]['thumb'] = basePath + acc[imgnum]['thumb'];
+    acc[imgnum]['images'] = data['images'].map(img => basePath + img);
+    return acc;
+  }, {});
+
+  const handleClick = (imageSet) => {
+    const viewerImages = document.createElement('div');
+
+    imageSet["images"].forEach((url) => {
+      const img = document.createElement('img');
+      img.src = url;
+      viewerImages.appendChild(img);
+    });
+
+    const viewer = new Viewer(viewerImages, {
+      hidden: () => {
+        viewer.destroy();
+      },
+      title: () => imageSet["name"] + " - " + imageSet["info"],
+      toolbar: {
+        zoomIn: { show: 1,size: 'large', },
+        zoomOut: { show: 1,size: 'large', },
+        oneToOne: { show: 1,size: 'large', },
+        reset: { show: 1,size: 'large', },
+        prev: { show: 1,size: 'large', },
+        play: { show: 1,size: 'large', },
+        next: { show: 1,size: 'large', },
+        rotateLeft: 0,
+        rotateRight: 0,
+        flipHorizontal: 0,
+        flipVertical: 0,
+      },
+    });
+
+    viewer.show();
+  };
+
+  return (
+    <div className="image-container">
+      {Object.entries(images).map(([imgnum, imgdata]) => (
+        <div className='image-sub-container'>
+        <img src={imgdata["thumb"]} className="thumbnail" onClick={() => handleClick(imgdata)} alt={`Thumbnail ${imgnum}`} key={imgnum}/>
+        <div className='image-overlay'>{imgdata["name"]}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default ImageGallery;
