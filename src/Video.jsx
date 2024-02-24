@@ -5,6 +5,19 @@ function Video(){
     return <main>
     <Sitename title={"VIDEO"}/>
     <section className="video-section">
+
+        <div className="video-container">
+            <div className="video-info">
+<h4>Bente Westergaard</h4>
+<h5>Bente Westergaard (født Serup Eriksen) er født i 1938 i Nr. Lem ved Lemvig.</h5>
+<br></br>
+<p>Bente var gift med Ejgil Westergaard med hvem hun drev stenhuggeriet i Weibelsgade i Lemvig fra 1964 til 2001. Det var Bente, der tog sig af den daglige drift og talte med kunderne. Bente og Ejgil arbejdede tæt sammen om firmaet, og de boede oven på værkstedet. Efter ophør af forretningen i 2001 flyttede de op på bakkerne omkring Lemvig på “grunden”, hvor Ejgil havde atelier og hvor de byggede et hus med vidunderlig udsigt over Thøger Larsens land over Limfjorden til Harboøre Tange. “Grunden” ligger i det landskab, som Bente voksede op i. </p>
+<p>Efter forretningens ophør arbejdede Bente i 21 år som frivillig i Røde Kors. Her tog hun del i ansvaret for de ansatte og var med til at bygge Røde Kors’ genbrugsbutik op til den høje standard, den er kendt for i dag.</p>
+<p>Bente og Ejgil er forældre til Elof og Laila Westergaard.</p>            
+            </div>
+            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src=""/>
+        </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Elof Westergaard</h4>
@@ -17,6 +30,7 @@ function Video(){
             </div>
             <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Elof Westergaard.jpg"/>
         </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Laila Westergaard</h4>
@@ -37,6 +51,7 @@ function Video(){
             </div>
             <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Laila Westergaard.jpg"/>
         </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Anna Margrethe Weatergaard</h4>
@@ -50,6 +65,18 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
             </div>
             <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Anna Westergaard.jpg"/>
         </div>
+
+        <div className="video-container">
+            <div className="video-info">
+<h4>Ragna Thorndahl</h4>
+<h5>Ragna Thorndahl, født 1937, er Ejgil Westergaards 9 år yngre søster. </h5>
+<br></br>
+<p>Sammen med sine fire andre søskende voksede hun op på stenhuggeriet i Weibelsgade, stiftet af Torvald Westergaard i 1923. Hendes mor og far, Agnethe og Torvald, underviste deres børn hjemme. Ragna blev uddannet pædagog i Holstebro og bor nu i Ålborg. </p>
+<p>Hun er enke efter Aken Thorndahl med hvem hun fik to børn, Arvid og Bjarke. </p>
+            </div>
+            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src=""/>
+        </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Kunsthistoriker og forfatter Mag.art. Ane Lie Stokbro.</h4>
@@ -62,6 +89,7 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
             </div>
             <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Ane Lie Stokbro.jpg"/>
         </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Svend Nielsen</h4>
@@ -72,6 +100,7 @@ I denne forbindelse fik han nært samarbejde Eigil Westergaard. </p>
             </div>
             <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Svend Nielsen.jpg"/>
         </div>
+
         <div className="video-container">
             <div className="video-info">
 <h4>Lars Ebbensgaard</h4>
