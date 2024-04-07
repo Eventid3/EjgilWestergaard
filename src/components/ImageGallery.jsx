@@ -6,7 +6,7 @@ const basePath = import.meta.env.MODE === 'production' ? '/EjgilWestergaard/' : 
 
 const ImageGallery = ({ selectedCategory }) => {
   const lemvigImages = {
-    '001' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/001Tro og HåbThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/001ATro og Håb.jpg', 'img/Skulpturer i kommunen/001BTro og Håb.jpg'], 'name': 'Tro og Håb', 'info': 'Hvis norsk og mørk bornholms granit. Opstillet påThyborøn Kirkegård. Størrelse: Højde 215 cm Bredde 240 cm Dybde 170 cm'},
+    '001' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/001VækstThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/001AVækst.jpg', 'img/Skulpturer i kommunen/001BVækst.jpg'], 'name': 'Vækst', 'info': 'Opstillet i et gårdsrum på Cheminova, Harboøre Tange. Højde 169 cm, Bredde 78 cm, Dybde 38 cm'},
     '002' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/002OpstandelseThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/002AOpstandelse.jpg', 'img/Skulpturer i kommunen/002BOpstandelse.jpg'], 'name': 'Opstandelse', 'info': 'Står i Valgmenighedskirken i Lemvig. Størrelse: Højde 72 cm Bredde 35 cm Dybde 23 cm'},
     '003' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/003JensChr.SkouThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/003AJensChr.Skou.jpg', 'img/Skulpturer i kommunen/003BJensChr.Skou.jpg'], 'name': 'Jens Chr. Skou', 'info': 'Lemvig Gymnasium. Størrelse: Højde47 cm Bredde 46 cm'},
     '004' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/004LangbaadenThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/004ALangbaaden.jpg', 'img/Skulpturer i kommunen/004BLangbaaden.jpg', 'img/Skulpturer i kommunen/004CLangbaaden.jpg'], 'name': 'Langbaaden', 'info': 'Langbaaden, Fugleflugten. Havdyret. Placeret ved Lemvig Gymnasium. Størrelse: Højde 83 cm Bredde 97 cm Dybde 50 cm'},
@@ -26,7 +26,7 @@ const ImageGallery = ({ selectedCategory }) => {
     '018' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/018ElinThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/018AElin.jpg', 'img/Skulpturer i kommunen/018BElin.jpg'], 'name': 'Elin Nielssons gravminde', 'info': 'Placeret på Fjaltring Kirkegård. Højde 22 cm, Bredde 19 cm, Dybde 13 cm'},
     '019' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/019LivsudfoldelseThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/019ALivsudfoldelse.jpg', 'img/Skulpturer i kommunen/019BLivsudfoldelse.jpg'], 'name': 'Lomborg', 'info': 'Opstillet på Lomborg Ungdomsskole. Højde 101 cm, Bredde 45 cm, Dybde 19 cm'},
     '020' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/020SvungetSejlThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/020ASvungetSejl.jpg', 'img/Skulpturer i kommunen/020BSvungetSejl.jpg'], 'name': 'Svinget Sejl', 'info': 'Opstillet på havnen i Lemvig. Højde 205 cm, Bredde 140 cm, Dybde 65 cm'},
-    '021' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/021VækstThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/021AVækst.jpg', 'img/Skulpturer i kommunen/021BVækst.jpg'], 'name': 'Vækst', 'info': 'Opstillet i et gårdsrum på Cheminova, Harboøre Tange. Højde 169 cm, Bredde 78 cm, Dybde 38 cm'},
+    '021' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/021Tro og HåbThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/021ATro og Håb.jpg', 'img/Skulpturer i kommunen/021BTro og Håb.jpg'], 'name': 'Tro og Håb', 'info': 'Hvid norsk og mørk bornholms granit. Opstillet påThyborøn Kirkegård. Størrelse: Højde 215 cm Bredde 240 cm Dybde 170 cm'},
     '022' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/022SkyggerimulmThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/022ASkyggerimulm.jpg', 'img/Skulpturer i kommunen/022BSkyggerimulm.jpg', 'img/Skulpturer i kommunen/022CSkyggerimulm.jpg'], 'name': 'Skygger i mulm', 'info': 'Opstillet ved Bøvling Valgmenighedskirke. Højde 87 cm, Bredde 75 cm, Dybde 28 cm'},
     '023' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/023StøvogåndThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/023AStøvogånd.jpg', 'img/Skulpturer i kommunen/023BStøvogånd.jpg'], 'name': 'Støv og Ånd', 'info': 'Opstillet ved Bøvling Valgmenighedskirke. Ejgils svendestykke 1947. Højde 146 cm, Bredde 40 cm, Dybde 29 cm'},
     '024' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/024BondenfraVejrumThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/024ABondenfraVejrum.jpg', 'img/Skulpturer i kommunen/024BBondenfraVejrum.jpg'], 'name': 'Bonden fra Vejrum', 'info': 'Placeret ved VIA University College Nørre Nissum. Højde 77 cm, Bredde 45 cm, Dybde 50 cm'},
@@ -69,7 +69,6 @@ const ImageGallery = ({ selectedCategory }) => {
     '030' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/030Skib, Anker, KorsThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/030ASkib, Anker, Kors.jpg', 'img/Skulpturer uden for kommunen/030BSkib, Anker, Kors.jpg'], 'name': 'Skib Anker Kors', 'info': 'Placeret på Urnegrav Fyrrevangen, Nordby, Fanø. Størrelse: Højde 148 cm Bredde 100 cm Dybde 67 cm '},
     '031' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/031Stenens fugleThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/031AStenens fugle.jpg', 'img/Skulpturer uden for kommunen/031BStenens fugle.jpg', 'img/Skulpturer uden for kommunen/031CStenens fugle.jpg'], 'name': 'Stenens fugle', 'info': 'Placeret foran Tønder Sygehus. Størrelse: Højde 78 cm Bredde 100 cm Dybde 45 cm '},
     '032' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/032HøneThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/032AHøne.jpg', 'img/Skulpturer uden for kommunen/032BHøne.jpg'], 'name': 'Høne', 'info': 'privat eje. Størrelse: Højde 15 cm Bredde 15 cm Dybde 8,5 cm'},
-    '033' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/033ATro og HåbThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/033ATro og Håb.JPG', 'img/Skulpturer uden for kommunen/033BTro og Håb.JPG'], 'name': 'Tro og Håb ', 'info': 'Placeret på Thyborøn Kirkegård, til minde om dem der blev derude. Størrelse: Højde 215 cm Bredde 240 cm Dybde 170 cm'},
     '034' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/034MusikstenenThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/034AMusikstenen.JPG', 'img/Skulpturer uden for kommunen/034BMusikstenen.JPG', 'img/Skulpturer uden for kommunen/034CMusikstenen.JPG'], 'name': 'Musikstenen ', 'info': 'Placeret på Kirketorvet i Hobro. Størrelse: Højde xx cm Bredde xx cm Dybde xx cm '},
     '035' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/035HestemarkedThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/035AHestemarked.jpg', 'img/Skulpturer uden for kommunen/035BHestemarked.jpg', 'img/Skulpturer uden for kommunen/035CHestemarked.jpg', 'img/Skulpturer uden for kommunen/035DHestemarked.jpg'], 'name': 'Hjallerup hestemarked ', 'info': 'Placeret på Damhusgrunden 1986. Størrelse: Højde 180 cm Bredde 130 cm Dybde 95 cm '},
     '036' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/036Horn-Bue-FuglThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/036AHorn-Bue-Fugl.jpg', 'img/Skulpturer uden for kommunen/036BHorn-Bue-Fugl.jpg', 'img/Skulpturer uden for kommunen/036CHorn-Bue-Fugl.jpg', 'img/Skulpturer uden for kommunen/036DHorn-Bue-Fugl.jpg', 'img/Skulpturer uden for kommunen/036EHorn-Bue-Fugl.jpg'], 'name': 'Horn-Bue-Fugl ', 'info': 'Placeret på Sildehagen, flyttet til lystbådhavnen. Størrelse: Højde 166 cm Bredde 260 cm Dybde 180 cm '},
@@ -160,7 +159,7 @@ const ImageGallery = ({ selectedCategory }) => {
     '034' : {'thumb': 'img/Skulpturer på Grunden/thumbnails/034LedeblokThumbnail.jpg', 'images': ['img/Skulpturer på Grunden/034ALedeblok.jpg', 'img/Skulpturer på Grunden/034BLedeblok.jpg'], 'name': 'Ledeblok', 'info': 'Størrelse: Højde 230 cm Bredde 190 Dybde 70 cm'},
     };
 
-  const vaerkstedetImages = {
+  const atalieretImages = {
     '001' : {'thumb': 'img/Foto i værksted/thumbnails/001InteriørThumnail.jpg', 'images': ['img/Foto i værksted/001AInteriør.jpg', 'img/Foto i værksted/001BInteriør.jpg', 'img/Foto i værksted/001CInteriør.jpg', 'img/Foto i værksted/001DInteriør.jpg'], 'name': 'Interiør', 'info': 'Glimt fra Ejgil Westergaards værksted'},
     '002' : {'thumb': 'img/Foto i værksted/thumbnails/002Værktøj01Thumbnail.jpg', 'images': ['img/Foto i værksted/002AVærktøj01.jpg', 'img/Foto i værksted/002BVærktøj01.jpg', 'img/Foto i værksted/002CVærktøj01.jpg', 'img/Foto i værksted/002DVærktøj01.jpg', 'img/Foto i værksted/002EVærktøj01.jpg', 'img/Foto i værksted/002FVærktøj01.jpg'], 'name': 'Værktøj og redskaber', 'info': 'Ejgil Westergaards værktøj som han efterlod ved sin død.'},
     '003' : {'thumb': 'img/Foto i værksted/thumbnails/003Værktøj02Thumbnail.jpg', 'images': ['img/Foto i værksted/003AVærktøj02.jpg', 'img/Foto i værksted/003BVærktøj02.jpg', 'img/Foto i værksted/003CVærktøj02.jpg', 'img/Foto i værksted/003DVærktøj02.jpg', 'img/Foto i værksted/003EVærktøj02.jpg', 'img/Foto i værksted/003FVærktøj02.jpg'], 'name': 'Værktøj og redskaber', 'info': 'Ejgil Westergaards værktøj som han efterlod ved sin død.'},
@@ -212,7 +211,7 @@ const ImageGallery = ({ selectedCategory }) => {
     '049' : {'thumb': 'img/Foto i værksted/thumbnails/049SkitseThumbnail.jpg', 'images': ['img/Foto i værksted/049ASkitse.jpg'], 'name': 'Vejrum Bonden', 'info': 'Gips. Størrelse: Højde 80 cm Bredde 50 cm Dybde 48 cm'},
     '050' : {'thumb': 'img/Foto i værksted/thumbnails/050SkitseThumbnail.jpg', 'images': ['img/Foto i værksted/050ASkitse.jpg'], 'name': 'Rødfisk', 'info': 'Størrelse: Højde 18,5 cm Bredde 18 cm Dybde 5 cm'},
     '051' : {'thumb': 'img/Foto i værksted/thumbnails/051SkitseThumbnail.jpg', 'images': ['img/Foto i værksted/051ASkitse.jpg'], 'name': 'To høns', 'info': 'Bronze. Størrelse: Højde 20 cm Bredde 28 cm Dybde 12 cm'},
-    '052' : {'thumb': 'img/Foto i værksted/thumbnails/052SkitseThumbnail.jpg', 'images': ['img/Foto i værksted/052ASkitse.jpg', 'img/Foto i værksted/052BSkitse.jpg'], 'name': 'Elof', 'info': 'Bronze. Størrelse: Højde 13 cm Bredde 47 cm Dybde 23 cm'},
+    '052' : {'thumb': 'img/Foto i værksted/thumbnails/052ElofThumbnail.jpg', 'images': ['img/Foto i værksted/052ElofA.jpeg', 'img/Foto i værksted/052ElofB.jpeg', 'img/Foto i værksted/052ElofC.jpeg', 'img/Foto i værksted/052ElofD.jpeg'], 'name': 'Elof', 'info': 'Bronze. Størrelse: Højde 13 cm Bredde 47 cm Dybde 23 cm'},
     '053' : {'thumb': 'img/Foto i værksted/thumbnails/053Mor med BarnThumbnail.jpg', 'images': ['img/Foto i værksted/053AMor med Barn.jpg'], 'name': 'Mor med barn', 'info': 'Træ. Størrelse: Højde 162 cm Bredde 60 cm Dybde 62 cm'},
     };
 
@@ -226,8 +225,8 @@ const ImageGallery = ({ selectedCategory }) => {
         return havenImages;
       case "grunden":
         return grundenImages;
-      case "vaerkstedet":
-        return vaerkstedetImages;
+      case "atalieret":
+        return atalieretImages;
       default:
         return {};
     }

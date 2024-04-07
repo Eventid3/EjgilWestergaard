@@ -19,11 +19,14 @@ def createThumbnailList(prePath, thumbPath, imgPath, infoPath, outputfile):
     #     for img in thumbnails:
     #         file.write(f'"img/Skulpturer/thumbnails/{img}",\n')
     currentImg = ""
-
+    
     with open(infoPath, encoding="utf-8") as file:
         for line in file:
             if line.startswith("Navn: "):
-                imageDict[currentImg]["name"] = line[6:-1]
+                try:
+                    imageDict[currentImg]["name"] = line[6:-1]
+                except:
+                    pass
                 # print(currentImg, line[6:-1])
             elif line.startswith("Info: "):
                 imageDict[currentImg]["info"] = line[6:-1]
@@ -36,10 +39,10 @@ def createThumbnailList(prePath, thumbPath, imgPath, infoPath, outputfile):
         for k,v in imageDict.items():
             file.write(f"'{k}' : {v},\n")
             
-createThumbnailList("public/", "img/Skulpturer i kommunen/thumbnails", "img/Skulpturer i kommunen", "textinfo/infoLemvig.txt", "lemvigthumbnaillist.txt")
-createThumbnailList("public/", "img/Skulpturer i haven/thumbnails", "img/Skulpturer i haven", "textinfo/infoHaven.txt", "haventhumbnaillist.txt")
-createThumbnailList("public/", "img/Skulpturer uden for kommunen/thumbnails", "img/Skulpturer uden for kommunen", "textinfo/infoULemvig.txt", "ulemvigthumbnaillist.txt")
+# createThumbnailList("public/", "img/Skulpturer i kommunen/thumbnails", "img/Skulpturer i kommunen", "textinfo/infoLemvig.txt", "lemvigthumbnaillist.txt")
+# createThumbnailList("public/", "img/Skulpturer i haven/thumbnails", "img/Skulpturer i haven", "textinfo/infoHaven.txt", "haventhumbnaillist.txt")
+# createThumbnailList("public/", "img/Skulpturer uden for kommunen/thumbnails", "img/Skulpturer uden for kommunen", "textinfo/infoULemvig.txt", "ulemvigthumbnaillist.txt")
 createThumbnailList("public/", "img/Foto i værksted/thumbnails", "img/Foto i værksted", "textinfo/infoVaerkstedet.txt", "vaerkstedthumbnaillist.txt")
 # createThumbnailList("public/", "img/Skulpturer på Grunden/thumbnails", "img/Skulpturer på Grunden", "textinfo/infoGrunden.txt", "grundenthumbnaillist.txt")
 # createThumbnailList("public/", "img/Avisudklip/thumbnails", "img/Avisudklip", "textinfo/infoAvis.txt", "avisthumbnaillist.txt")
-createThumbnailList("public/", "img/Foto/thumbnails", "img/Foto", "textinfo/infoFoto.txt", "fotothumbnaillist.txt")
+# createThumbnailList("public/", "img/Foto/thumbnails", "img/Foto", "textinfo/infoFoto.txt", "fotothumbnaillist.txt")

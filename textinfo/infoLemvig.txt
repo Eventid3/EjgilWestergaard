@@ -1,6 +1,6 @@
 001
-Navn: Tro og Håb
-Info: Hvis norsk og mørk bornholms granit. Opstillet påThyborøn Kirkegård. Størrelse: Højde 215 cm Bredde 240 cm Dybde 170 cm
+Navn: Vækst
+Info: Opstillet i et gårdsrum på Cheminova, Harboøre Tange. Højde 169 cm, Bredde 78 cm, Dybde 38 cm
 002
 Navn: Opstandelse
 Info: Står i Valgmenighedskirken i Lemvig. Størrelse: Højde 72 cm Bredde 35 cm Dybde 23 cm
@@ -59,8 +59,8 @@ Info: Opstillet på Lomborg Ungdomsskole. Højde 101 cm, Bredde 45 cm, Dybde 19 
 Navn: Svinget Sejl
 Info: Opstillet på havnen i Lemvig. Højde 205 cm, Bredde 140 cm, Dybde 65 cm
 021
-Navn: Vækst
-Info: Opstillet i et gårdsrum på Cheminova, Harboøre Tange. Højde 169 cm, Bredde 78 cm, Dybde 38 cm
+Navn: Tro og Håb
+Info: Hvid norsk og mørk bornholms granit. Opstillet påThyborøn Kirkegård. Størrelse: Højde 215 cm Bredde 240 cm Dybde 170 cm
 022
 Navn: Skygger i mulm
 Info: Opstillet ved Bøvling Valgmenighedskirke. Højde 87 cm, Bredde 75 cm, Dybde 28 cm
