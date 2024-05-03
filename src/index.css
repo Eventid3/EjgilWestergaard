@@ -414,6 +414,19 @@ main {
   background-color: rgba(161, 161, 155,1);
 }
 
+
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  max-width: 850px;
+  background-color: antiquewhite;
+  padding: 18px;
+  margin: 10px;
+}
+
 @media screen and (min-width: 576px) {
 
   div.scrollmenu {

@@ -15,7 +15,7 @@ function Video(){
 <p>Efter forretningens ophør arbejdede Bente i 21 år som frivillig i Røde Kors. Her tog hun del i ansvaret for de ansatte og var med til at bygge Røde Kors’ genbrugsbutik op til den høje standard, den er kendt for i dag.</p>
 <p>Bente og Ejgil er forældre til Elof og Laila Westergaard.</p>            
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Bente Westergaard.jpg"/>
+            <YouTubePlayer href="https://youtu.be/-E3KG7Ek3ms" src="img/VideoPersoner/Bente Westergaard.jpg"/>
         </div>
 
         <div className="video-container">
@@ -28,7 +28,7 @@ function Video(){
 <p>I antologien <i>Hvor blev det grundtvigske af</i>, Eksistensen 2004, har Elof Westergaard gennem interview af faderen givet et grundigt portræt af Ejgil Westergaard med overskriften <i>Modtagelighed for det uforudsigelige.</i></p>
 <p>Elof Westergaard blev bispeviet 1. juni 2014 og har siden da været biskop over Ribe Stift.</p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Elof Westergaard.jpg"/>
+            <YouTubePlayer href="https://youtu.be/lqSFrH3gf9E" src="img/VideoPersoner/Elof Westergaard.jpg"/>
         </div>
 
         <div className="video-container">
@@ -49,7 +49,7 @@ function Video(){
 <p>Laila Westergaard er beskrevet i bogen Levende Stene, Eksistensen 2021, hvoraf en mindre udgave er under forberedelse på engelsk og tysk. </p>
 <p>Nærmere om Lailas Westergaards værker kan man se på <a href="https://www.lailawestergaard.dk">www.lailawestergaard.dk</a></p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Laila Westergaard.jpg"/>
+            <YouTubePlayer href="https://youtu.be/XH5lIu9BxPw" src="img/VideoPersoner/Laila Westergaard.jpg"/>
         </div>
 
         <div className="video-container">
@@ -63,7 +63,7 @@ function Video(){
 udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved Aarhus Universitet (23. september - 18. december 2022), samt redaktør på det dertilhørende udstillingskatalog.</p>
 <p>Anna Margrethe Westergaard er barnebarn af Bente og Ejgil Westergaard, datter af Elof Westergaard og Kirsten Margrethe Andersen.</p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Anna Westergaard.jpg"/>
+            <YouTubePlayer href="https://youtu.be/gyOO9O4FzNc" src="img/VideoPersoner/Anna Westergaard.jpg"/>
         </div>
 
         <div className="video-container">
@@ -74,7 +74,7 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
 <p>Sammen med sine fire andre søskende voksede hun op på stenhuggeriet i Weibelsgade, stiftet af Torvald Westergaard i 1923. Hendes mor og far, Agnethe og Torvald, underviste deres børn hjemme. Ragna blev uddannet pædagog i Holstebro og bor nu i Ålborg. </p>
 <p>Hun er enke efter Aken Thorndahl med hvem hun fik to børn, Arvid og Bjarke. </p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Ragna Thorndahl.jpg"/>
+            <YouTubePlayer href="https://youtu.be/N9BUeg737T0" src="img/VideoPersoner/Ragna Thorndahl.jpg"/>
         </div>
 
         <div className="video-container">
@@ -87,7 +87,7 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
 <p>Kunstetagerne Hobro er et udstillingssted for moderne kunst og design, hvor Ane Lie arbejder med udstillingstilrettelæggelse, formidling og registrering og er tilknyttet Hobro Kunstsamling som konsulent.	</p>
 <p>Anne Lie Stokbro skaber udstillinger med dyb kunsthistorisk indsigt, grundig research og stort engagement.</p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Ane Lie Stokbro.jpg"/>
+            <YouTubePlayer href="https://youtu.be/VU4FyZv2aBM" src="img/VideoPersoner/Ane Lie Stokbro.jpg"/>
         </div>
 
         <div className="video-container">
@@ -98,7 +98,7 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
 <p>Svend Nielsen var i over 40 år læge i Hobro til han i maj 2017 blev 80 år. Han var en utrættelig kunstformidler og kunstsamler og lagde grunden til Hobro store kunstsamling. 
 I denne forbindelse fik han nært samarbejde Eigil Westergaard. </p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Svend Nielsen.jpg"/>
+            <YouTubePlayer href="https://youtu.be/YHd1T4BkXk8" src="img/VideoPersoner/Svend Nielsen.jpg"/>
         </div>
 
         <div className="video-container">
@@ -108,7 +108,7 @@ I denne forbindelse fik han nært samarbejde Eigil Westergaard. </p>
 <p>Lars Ebbensgaard er sammen med hustruen Nelly nære venner af Ejgil Westergaard og Westergaardfamilien. Lars Ebbensgaard har ført mange samtaler med Ejgil Westergaard om kunst og om skole og om livet. De var enige om, at det er det, der stræber opad, der vinder.</p>
 <p>Lars Ebbensgaard var rektor fra Lemvig Gymnasium 1979-2014, blandt andet for Ejgils datter Laila Westergaard. På Lemvig Gymnasium fik Lars Ebbensgaard samlet en meget stor kunstsamling godt hjulpet af Lemvig Kommune, Ringkjøbing Amt, Ny Carlsbergfondet og vennen Hans Edvard Nørregård-Nielsen samt Ejgil og Laila Westergaard.</p>
             </div>
-            <YouTubePlayer href="https://www.youtube.com/watch?v=rzYVZM7kTuw&ab_channel=HeineSand" src="img/VideoPersoner/Lars Ebbensgaard.jpg"/>
+            <YouTubePlayer href="https://youtu.be/WmDbuXNeO1g" src="img/VideoPersoner/Lars Ebbensgaard.jpg"/>
         </div>
     </section>
 </main>
