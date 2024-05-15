@@ -82,3 +82,6 @@ Info: Opstillet uden for indgangen til Lemvig Gymnasium. Størrelse: Højde 57 c
 028
 Navn: Dolle
 Info: Opstillet på Lemvig Kirkegård. Størrelse: Højde 48 cm Bredde 92 cm Dybde 20 cm
+029
+Navn: Slægten
+Info: Placering: Industrivej 15, Lemvig. Størrelse: Højde 90 cm, Bredde: 44 cm, Længde: 63 cm. Tekst Ejgil Westergaard 1970. Skænket Boligselskabet af Lemvig Kommune 1970.

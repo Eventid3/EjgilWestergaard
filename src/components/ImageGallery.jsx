@@ -34,7 +34,8 @@ const ImageGallery = ({ selectedCategory }) => {
     '026' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/026TræetThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/026ATræet.jpg', 'img/Skulpturer i kommunen/026BTræet.jpg', 'img/Skulpturer i kommunen/026CTræet.jpg'], 'name': 'Træet', 'info': 'Opstillet på Lemvig Gymnasium. Størrelse: Højde 62 cm Bredde 123 cm Dybde 20 cm'},
     '027' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/027Stenens FugleThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/027AStenens Fugle.jpg', 'img/Skulpturer i kommunen/027BStenens Fugle.jpg', 'img/Skulpturer i kommunen/027CStenens Fugle.jpg'], 'name': 'Stenens Fugle', 'info': 'Opstillet uden for indgangen til Lemvig Gymnasium. Størrelse: Højde 57 cm Bredde 85 cm Dybde 60 cm'},
     '028' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/028DolleThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/028ADolle.jpg'], 'name': 'Dolle', 'info': 'Opstillet på Lemvig Kirkegård. Størrelse: Højde 48 cm Bredde 92 cm Dybde 20 cm'},
-    };
+    '029' : {'thumb': 'img/Skulpturer i kommunen/thumbnails/029SlægtenThumbnail.jpg', 'images': ['img/Skulpturer i kommunen/029SlægtenA.jpg', 'img/Skulpturer i kommunen/029SlægtenB.jpg', 'img/Skulpturer i kommunen/029SlægtenC.jpg', 'img/Skulpturer i kommunen/029SlægtenD.jpg'], 'name': 'Slægten', 'info': 'Placering: Industrivej 15, Lemvig. Størrelse: Højde 90 cm, Bredde: 44 cm, Længde: 63 cm. Tekst Ejgil Westergaard 1970. Skænket Boligselskabet af Lemvig Kommune 1970.'},  
+  };
 
   const uLemvigImages = {
     '001' : {'thumb': 'img/Skulpturer uden for kommunen/thumbnails/001HardsysselstenenThumbnail.jpg', 'images': ['img/Skulpturer uden for kommunen/001AHardsysselstenen.jpg', 'img/Skulpturer uden for kommunen/001BHardsysselstenen.jpg'], 'name': 'Hardsysselstenen ', 'info': 'Placeret i Holstebro. (700 års jubilæum) Størrelse: Højde 132 cm Bredde 113 cm Dybde 43 cm '},
