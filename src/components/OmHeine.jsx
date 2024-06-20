@@ -1,8 +1,8 @@
 
 function OmHeine() {
     return <div className="text">
-        <h2>Levende Stene</h2>
-        <h4><i>En hjemmesiden til billedhugger Ejgil Westergaards minde har vi kaldt Levende Stene – ganske enkelt fordi han gør stenene levende.</i></h4>
+        <h2>Stenens Bevægelse</h2>
+        <h4><i>En hjemmesiden til billedhugger Ejgil Westergaards minde har vi kaldt Stenens Bevægelse – ganske enkelt fordi han skaber bevægelse i stenen.</i></h4>
         <br />
         <h3>Fotograf,  Cand.pæd. Heine Sand</h3>
         <br />
