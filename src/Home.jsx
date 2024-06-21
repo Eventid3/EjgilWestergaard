@@ -6,7 +6,12 @@ function Home(){
     src={bgimage} 
     alt="Ejgil Vestergaard ved skulptur" 
     className="background-image" 
-    /></div>
+    />
+    <div className="headline">
+    <h1>STENENS BEVÆGELSE</h1>  
+    <h2>Ejgil Westergaard</h2>
+    </div>
+    </div>
 }
 
 export default Home

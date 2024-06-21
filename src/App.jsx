@@ -16,6 +16,7 @@ function App() {
     <Header />
     <Routes>
       <Route path={""} element={<Home />} />
+      <Route path={"index.html"} element={<Home />} />
       <Route path={"skulpturer"} element={<Skulpturer />} />
       <Route path={"video"} element={<Video />} />
       <Route path={"cv"} element={<CV />} />
