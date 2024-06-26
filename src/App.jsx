@@ -9,7 +9,7 @@ import Foto from "./Foto"
 import Om from "./Om"
 import Kontakt from "./Kontakt"
 
-const basePath = import.meta.env.MODE === 'production' ? '/EjgilWestergaard/' : '/';
+const basePath = '/';
 
 function UnderConstruction(){
   return <p className="text">Denne hjemmeside er under konstruktion!</p>
