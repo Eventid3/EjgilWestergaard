@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import Header from "./Header"
 import Home from "./Home"
 import Skulpturer from "./Skulpturer"
@@ -11,11 +11,21 @@ import Kontakt from "./Kontakt"
 
 const basePath = import.meta.env.MODE === 'production' ? '/EjgilWestergaard/' : '/';
 
+function UnderConstruction(){
+  return <p className="text">Denne hjemmeside er under konstruktion!</p>
+}
+
+function ConditionalHeader(){
+  const location = useLocation();
+  return location.pathname !== "/" ? <Header /> : <UnderConstruction />;
+}
+
 function App() {
-  return <Router basename={basePath}>
-    <Header />
+  console.log("Location: " + location.pathname);
+  return <Router basename={basePath}> 
+    <ConditionalHeader />
     <Routes>
-      <Route path={""} element={<Home />} />
+      <Route path={""} /*element={<Home />}*/ />
       <Route path={"index.html"} element={<Home />} />
       <Route path={"skulpturer"} element={<Skulpturer />} />
       <Route path={"video"} element={<Video />} />
