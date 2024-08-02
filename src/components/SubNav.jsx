@@ -7,7 +7,7 @@ function SubNav({ onNavClick }) {
         <a onClick={() => onNavClick('ulemvig')}>Udenfor Lemvig</a>
         <a onClick={() => onNavClick('haven')}>I Haven</a>
         <a onClick={() => onNavClick('grunden')}>På Grunden</a>
-        <a onClick={() => onNavClick('atalieret')}>Atalieret</a>
+        <a onClick={() => onNavClick('atalieret')}>Atelieret</a>
       </div>
     );
   }

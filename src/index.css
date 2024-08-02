@@ -319,6 +319,10 @@ main {
   
 }
 
+.image-sub-container:hover {
+  cursor: zoom-in;
+}
+
 .thumbnail {
   display: block;
   width: 100%;
@@ -336,7 +340,6 @@ main {
 }
 
 .image-sub-container:hover .thumbnail{
-  cursor: zoom-in;
   filter:grayscale(0%);
   transform: scale(105%);
 }
@@ -401,7 +404,7 @@ main {
 }
 
 .viewer-title {
-  font-size: 14px;
+  font-size: 18px;
   max-width: 100%;
   white-space: normal;
   text-wrap:wrap;
@@ -462,6 +465,8 @@ main {
     font-size: 70px;
   }
 
+
+
   
 }
 
@@ -478,6 +483,10 @@ main {
     max-width: 80%;
     max-height: 80%;
     object-fit: cover;
+  }
+
+  .viewer-title {
+    font-size: 16px;
   }
 
   h2 {

@@ -23,7 +23,7 @@ function Video(){
 <h4>Elof Westergaard</h4>
 <h5>Elof Westergaard er søn af Bente og Ejgil Westergaard, født i 1962.</h5>
 <br></br>
-<p>Elof Westergaard er opvokset med salg af gravsten, hvilket indebærer en god evne til at lytte til pårørende. Student fra Struer Gymnasium. Cand.theol. fra Aarhus Universitet 1991.biskop over Ribe Stift - bispeviet </p>
+<p>Elof Westergaard er opvokset med salg af gravsten, hvilket indebærer en god evne til at lytte til pårørende. Student fra Struer Gymnasium. Cand.theol. fra Aarhus Universitet 1991. </p>
 <p>Blandt en stor mængde bøger, han har skrevet, skal nævnes Sten over Muld, Chora 2010, hvor man kan læse om faderens arbejde som stenhugger og kunstner.</p>
 <p>I antologien <i>Hvor blev det grundtvigske af</i>, Eksistensen 2004, har Elof Westergaard gennem interview af faderen givet et grundigt portræt af Ejgil Westergaard med overskriften <i>Modtagelighed for det uforudsigelige.</i></p>
 <p>Elof Westergaard blev bispeviet 1. juni 2014 og har siden da været biskop over Ribe Stift.</p>
