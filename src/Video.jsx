@@ -24,7 +24,7 @@ function Video(){
 <h5>Elof Westergaard er søn af Bente og Ejgil Westergaard, født i 1962.</h5>
 <br></br>
 <p>Elof Westergaard er opvokset med salg af gravsten, hvilket indebærer en god evne til at lytte til pårørende. Student fra Struer Gymnasium. Cand.theol. fra Aarhus Universitet 1991.biskop over Ribe Stift - bispeviet </p>
-<p>Blandt en stor mængde bøger, han har skrevet, skal nævnes Sten over Muld, Chirac 2010, hvor man kan læse om faderens arbejde som stenhugger og kunstner.</p>
+<p>Blandt en stor mængde bøger, han har skrevet, skal nævnes Sten over Muld, Chora 2010, hvor man kan læse om faderens arbejde som stenhugger og kunstner.</p>
 <p>I antologien <i>Hvor blev det grundtvigske af</i>, Eksistensen 2004, har Elof Westergaard gennem interview af faderen givet et grundigt portræt af Ejgil Westergaard med overskriften <i>Modtagelighed for det uforudsigelige.</i></p>
 <p>Elof Westergaard blev bispeviet 1. juni 2014 og har siden da været biskop over Ribe Stift.</p>
             </div>
@@ -36,17 +36,12 @@ function Video(){
 <h4>Laila Westergaard</h4>
 <h5>Laila Westergaard er datter af Bente og Ejgil Westergaard, født 1964. </h5>
 <br></br>
-<p>Hun er opvokset i Lemvig og student fra Lemvig Gymnasium, hvor man kan se mange af hendes værker.  </p>
+<p>Hun er opvokset i Lemvig og student fra Lemvig Gymnasium, hvor man kan se mange af hendes værker.</p>
 <p>Laila Westergaard er uddannet fra Det Jyske Kunstakademi - 1985 - 1989.</p>
 <p>Güzel Sanatlar Fakültesi, Istanbul, Tyrkiet - 1989 - 1990.</p>
-<p>Laila Westergaard er medlem af:</p>
-<ul>
-    <li>Den Gyldne</li>
-    <li>Vrå-udstillingen</li>
-    <li>Kunstnersamfundet</li>
-    <li>BKF</li>
-</ul>
-<p>Laila Westergaard er beskrevet i bogen Levende Stene, Eksistensen 2021, hvoraf en mindre udgave er under forberedelse på engelsk og tysk. </p>
+<p>Laila Westergaard er billedhugger og har udført mange udsmykningsopgaver rundt om i landet bl.a. Gødstrup Hospitalskirke. </p>
+<p>Laila Westergaards værker er beskrevet i bogen Levende Stene, skrevet af Dorte Fogh og Annette Østergaard, udgivet på forlaget Eksistensen. </p>
+<p>I 2024 udgives Touched. En bog om hendes værker på engelsk.</p>
 <p>Nærmere om Lailas Westergaards værker kan man se på <a href="https://www.lailawestergaard.dk">www.lailawestergaard.dk</a></p>
             </div>
             <YouTubePlayer href="https://youtu.be/XH5lIu9BxPw" src="img/VideoPersoner/Laila Westergaard.jpg"/>
@@ -55,7 +50,7 @@ function Video(){
         <div className="video-container">
             <div className="video-info">
 <h4>Anna Margrethe Weatergaard</h4>
-<h5>Anna Margrethe Westergaard er kunsthistoriker fra Aarhus og Københavns Universitet. </h5>
+<h5>Anna Margrethe Westergaard startede sin uddannelse til kunsthistoriker på Aarhus og Københavns Universitet i 2022.</h5>
 <br></br>
 <p>Hun har arbejdet på Den Hirschsprungske Samling og på Ribe Kunstmuseum. </p>
 <p>Projektleder, kurator og redaktør på Antikmuseet og Lemvig Museum.</p>
@@ -94,8 +89,8 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
             <div className="video-info">
 <h4>Svend Nielsen</h4>
 <br></br>
-<p>1969-70 dannede en gruppe af borgere i Hobro på initiativ af læge Svend Nielsen en sammenslutning for at bringe samtidskunsten til Hobro. Det er i dag blevet til Hobros smukke kunstmuseum, som hører hjemme i den spændende bygning Kunstetagerne i Hobro, som tidligere var et bryggeri.</p>
-<p>Svend Nielsen var i over 40 år læge i Hobro til han i maj 2017 blev 80 år. Han var en utrættelig kunstformidler og kunstsamler og lagde grunden til Hobro store kunstsamling. 
+<p>1969-70 dannede en gruppe af borgere i Hobro på initiativ af læge Svend Nielsen en sammenslutning for at bringe samtidskunsten til Hobro. Det er i dag blevet til Hobro's smukke kunstmuseum, som hører hjemme i den spændende bygning Kunstetagerne i Hobro, som tidligere var et bryggeri.</p>
+<p>Svend Nielsen var i over 40 år læge i Hobro til han i maj 2017 blev 80 år. Han var en utrættelig kunstformidler og kunstsamler og lagde grunden til Hobro's store kunstsamling. 
 I denne forbindelse fik han nært samarbejde Eigil Westergaard. </p>
             </div>
             <YouTubePlayer href="https://youtu.be/YHd1T4BkXk8" src="img/VideoPersoner/Svend Nielsen.jpg"/>

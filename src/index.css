@@ -220,9 +220,10 @@ li.dropdown {
 }
 
 .headline {
+  padding-top: 30vh;
   position: absolute;
   text-align: center;
-  text-shadow: 0px 0px 5px #ffffff;
+  text-shadow: 0px 0px 5px #ffffff, 0px 0px 12px #ffffff;
 }
 
 .headline h1 {
