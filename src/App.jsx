@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "./Header"
 import Home from "./Home"
 import Skulpturer from "./Skulpturer"
@@ -8,6 +9,7 @@ import Avisudklip from "./Avisudklip"
 import Foto from "./Foto"
 import Om from "./Om"
 import Kontakt from "./Kontakt"
+import ScrollToTop from "./components/ScrollToTop";
 
 const basePath = '/';
 
@@ -21,8 +23,10 @@ function ConditionalHeader(){
 }
 
 function App() {
+
   // console.log("Location: " + location.pathname);
   return <Router basename={basePath}> 
+    <ScrollToTop />
     <ConditionalHeader />
     <Routes>
       <Route path={""} /*element={<Home />}*/ />

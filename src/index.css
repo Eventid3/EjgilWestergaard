@@ -93,9 +93,9 @@ nav {
   display: flex;
   width: 100%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav ul {
