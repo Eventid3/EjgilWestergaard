@@ -21,7 +21,7 @@ function ConditionalHeader(){
 }
 
 function App() {
-  console.log("Location: " + location.pathname);
+  // console.log("Location: " + location.pathname);
   return <Router basename={basePath}> 
     <ConditionalHeader />
     <Routes>
