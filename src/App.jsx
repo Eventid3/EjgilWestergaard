@@ -13,23 +13,23 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const basePath = '/';
 
-function UnderConstruction(){
-  return <p className="text">Denne hjemmeside er under konstruktion!</p>
-}
+//function UnderConstruction(){
+//  return <p className="text">Denne hjemmeside er under konstruktion!</p>
+//}
 
-function ConditionalHeader(){
-  const location = useLocation();
-  return location.pathname !== "/" ? <Header /> : <UnderConstruction />;
-}
+//function ConditionalHeader(){
+//  const location = useLocation();
+//  return location.pathname !== "/" ? <Header /> : <UnderConstruction />;
+//}
 
 function App() {
 
   // console.log("Location: " + location.pathname);
   return <Router basename={basePath}> 
     <ScrollToTop />
-    <ConditionalHeader />
+    <Header />
     <Routes>
-      <Route path={""} /*element={<Home />}*/ />
+      <Route path={""} element={<Home />} />
       <Route path={"index.html"} element={<Home />} />
       <Route path={"skulpturer"} element={<Skulpturer />} />
       <Route path={"video"} element={<Video />} />
