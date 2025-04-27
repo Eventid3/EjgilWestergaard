@@ -23,7 +23,7 @@ function OmElof() {
         <br />
         <p>Et stenhuggeri er jo et sted, hvor der dag efter dag hugges navne ind i granitten, fødselsår og dødsår tegnes op og hugges ind, og her mødte man alle de pårørende, de sørgende, som fortalte om deres tab. Det gjorde indtryk, og det var og blev en væsentlig del af Ejgils liv, om end han de sidste år ofte sagde: Nu skal det være slut med gravsten og kirkegård.  </p>
         <br />
-        <p>Men hvor har vi alligevel tit talt om død og begravelse, så håndfast og konkret, om hvor vi skal begraves, med hvilken udsigt og i hvilken jord.  En overgang var det havet, der trak, Trans kirkegård, men det var alligevel for sandet en jord, og i stedet er det så forbundetheden med Grunden, udsigten med landskabet ud over Tørring kirke Gjellerodde og Vesterhavet, som gør, at Ejgil i dag bliver jordfæstet og begravet i den mere lerholdige jord på Nr. Lem kirkegård.    </p>
+        <p>Men hvor har vi alligevel tit talt om død og begravelse, så håndfast og konkret, om hvor vi skal begraves, med hvilken udsigt og i hvilken jord.  En overgang var det havet, der trak, Trans kirkegård, men det var alligevel for sandet en jord, og i stedet er det så forbundetheden med Grunden, udsigten med landskabet ud over Tørring kirke Gjellerodde og Vesterhavet, som gør, at Ejgil i dag bliver jordfæstet og begravet i den mere lerholdige jord på Nørlem kirkegård.    </p>
         <br />
         <p>Vi kender jorden, og det gør vi jo alle. Vi mærkes af tiden og af, at den går, men samtidigt tror vi  og ved vi, at der skal  kæmpes og drømmes, og det har Ejgil nu gjort. </p>
         <br />

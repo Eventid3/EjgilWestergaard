@@ -9,7 +9,7 @@ function Video(){
         <div className="video-container">
             <div className="video-info">
 <h4>Bente Westergaard</h4>
-<h5>Bente Westergaard (født Serup Eriksen) er født i 1938 i Nr. Lem ved Lemvig.</h5>
+<h5>Bente Westergaard (født Serup Eriksen) er født i 1938 i Nørlem ved Lemvig.</h5>
 <br></br>
 <p>Bente var gift med Ejgil Westergaard med hvem hun drev stenhuggeriet i Weibelsgade i Lemvig fra 1964 til 2001. Det var Bente, der tog sig af den daglige drift og talte med kunderne. Bente og Ejgil arbejdede tæt sammen om firmaet, og de boede oven på værkstedet. Efter ophør af forretningen i 2001 flyttede de op på bakkerne omkring Lemvig på “grunden”, hvor Ejgil havde atelier og hvor de byggede et hus med vidunderlig udsigt over Thøger Larsens land over Limfjorden til Harboøre Tange. “Grunden” ligger i det landskab, som Bente voksede op i. </p>
 <p>Efter forretningens ophør arbejdede Bente i 21 år som frivillig i Røde Kors. Her tog hun del i ansvaret for de ansatte og var med til at bygge Røde Kors’ genbrugsbutik op til den høje standard, den er kendt for i dag.</p>
@@ -49,7 +49,7 @@ function Video(){
 
         <div className="video-container">
             <div className="video-info">
-<h4>Anna Margrethe Weatergaard</h4>
+<h4>Anna Margrethe Westergaard</h4>
 <h5>Anna Margrethe Westergaard startede sin uddannelse til kunsthistoriker på Aarhus og Københavns Universitet i 2022.</h5>
 <br></br>
 <p>Hun har arbejdet på Den Hirschsprungske Samling og på Ribe Kunstmuseum. </p>
@@ -89,9 +89,9 @@ udstillet på Lemvig Museum (4. juni til 18. september 2022) og Antikmuseet ved 
             <div className="video-info">
 <h4>Svend Nielsen</h4>
 <br></br>
-<p>1969-70 dannede en gruppe af borgere i Hobro på initiativ af læge Svend Nielsen en sammenslutning for at bringe samtidskunsten til Hobro. Det er i dag blevet til Hobro's smukke kunstmuseum, som hører hjemme i den spændende bygning Kunstetagerne i Hobro, som tidligere var et bryggeri.</p>
-<p>Svend Nielsen var i over 40 år læge i Hobro til han i maj 2017 blev 80 år. Han var en utrættelig kunstformidler og kunstsamler og lagde grunden til Hobro's store kunstsamling. 
-I denne forbindelse fik han nært samarbejde Eigil Westergaard. </p>
+<p>1969-70 dannede en gruppe af borgere i Hobro på initiativ af læge Svend Nielsen en sammenslutning for at bringe samtidskunsten til Hobro. Det er i dag blevet til Hobros smukke kunstmuseum, som hører hjemme i den spændende bygning Kunstetagerne i Hobro, som tidligere var et bryggeri.</p>
+<p>Svend Nielsen var i over 40 år læge i Hobro til han i maj 2017 blev 80 år. Han var en utrættelig kunstformidler og kunstsamler og lagde grunden til Hobros store kunstsamling.
+I denne forbindelse fik han et nært samarbejde Eigil Westergaard. </p>
             </div>
             <YouTubePlayer href="https://youtu.be/YHd1T4BkXk8" src="img/VideoPersoner/Svend Nielsen.jpg"/>
         </div>
